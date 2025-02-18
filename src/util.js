@@ -30,7 +30,7 @@ async function getCSVData(fileBlob) {
     };
   });
 
-  const dataGridRows = lines.slice(1, lines.length).map((line, i) => {
+  const dataGridRows = lines.slice(1, lines.length - 1).map((line, i) => {
     const attributes = line.split(", ");
 
     const formattedAttributes = {};
